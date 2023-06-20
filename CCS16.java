@@ -13,7 +13,7 @@ import java.math.BigInteger;
 public class CCS16 {
     // main function
 
-    static byte[] randomBytes;
+    public static byte[] randomBytes;
 
     public static void main(String[] args) throws Exception {
         runDPF();
@@ -203,7 +203,7 @@ public class CCS16 {
         int result;
         String one = "1";
         String zero = "0";
-        StringBuilder zeroString = new StringBuilder();// size = lambda, value = "000...000"
+        StringBuilder zeroString = new StringBuilder();
         for (int i = 0; i < 2 * lambda + 2; i++) {
             zeroString.append("0");
         }
